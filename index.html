@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portafolio de Jesús Eduardo</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .column#caption {
+        position: relative;
+      }
+      .column#caption .text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+        opacity: 0;
+        transition: all 0.8s ease;
+      }
+      .column#caption .text h1 {
+        margin: 0;
+        color: #222629;
+      }
+      .column#caption:hover .text {
+        opacity: 1;
+      }
+      .column#caption:hover img {
+        opacity: 0.2;
+      }
+    </style>
+  </head>
+  <body class="is-preload">
+    <!-- Header -->
+    <div id="header">
+      <div class="top">
+        <!-- Logo -->
+        <div id="logo">
+          <span class="image avatar48"
+            ><img
+              src="https://avatars.githubusercontent.com/u/52174137?s=400&u=070f95c145422a1ff68a719374efab54bdc5d128&v=4"
+              alt=""
+          /></span>
+          <h1 id="title">Jesús Eduardo</h1>
+          <p>Desarrollador Java fullstack</p>
+        </div>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li>
+              <a href="#top" id="top-link"
+                ><span class="icon solid fa-home">Inicio</span></a
+              >
+            </li>
+            <li>
+              <a href="#portfolio" id="portfolio-link"
+                ><span class="icon solid fa-th">Mis proyectos</span></a
+              >
+            </li>
+            <li>
+              <a href="#tools" id="tools-link"
+                ><span class="icon solid fa-cog">Herramientas</span></a
+              >
+            </li>
+            <li>
+              <a href="#contact" id="contact-link"
+                ><span class="icon solid fa-envelope">Contacto</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="bottom">
+        <!-- Social Icons -->
+        <ul class="icons">
+          <li>
+            <a
+              href="https://github.com/jesusedu"
+              target="_blank"
+              class="icon brands fa-github"
+              ><span class="label">Github</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/jes%C3%BAs-eduardo-bautista-gudi%C3%B1o-713741131"
+              target="_blank"
+              class="icon brands fa-linkedin"
+              ><span class="label">linkedin</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="mailto:jesusedu90@hotmail.com"
+              target="_blank"
+              class="icon solid fa-envelope"
+              ><span class="label">Email</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Main -->
+    <div id="main">
+      <!-- Intro -->
+      <section id="top" class="one dark cover">
+        <div class="container">
+          <header>
+            <h2 class="alt">
+              Hola soy Jesús Eduardo
+              <strong>Desarrollador Java fullstack</strong>
+            </h2>
+            <p>
+              Con 6 años de experiencia y mis especialidades son: JAVA | Spring
+              Framework | maven | vuejs | nodejs | javascript | jquery |
+              Bootstrap | PLSQL ORACLE | jasper server | Mongodb | GIT | Docker
+            </p>
+          </header>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="two">
+        <div class="container">
+          <header>
+            <h2>Mis Proyectos</h2>
+          </header>
+
+          <div class="row">
+            <div class="col-6 col-12-mobile">
+              <article class="item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="image fit column"
+                  id="caption"
+                >
+                  <span class="text"
+                    ><h1>App para ver la temperatura por ciudad</h1></span
+                  >
+                  <img width="420px" height="286px" src="images/pic02.jpg"
+                /></a>
+                <header>
+                  <h3>Weather App</h3>
+                </header>
+              </article>
+              <article class="item">
+                <a
+                  href="#"
+                  target="_blank"
+                  class="image fit column"
+                  id="caption"
+                >
+                  <span class="text"><h1>bot telegram</h1></span>
+                  <img width="420px" height="286px" src="images/pic03.jpg"
+                /></a>
+                <header>
+                  <h3>Weather bot</h3>
+                </header>
+              </article>
+            </div>
+            <div class="col-6 col-12-mobile">
+              <article class="item">
+                <a
+                  href="http://pedidos.mundoterra.com/"
+                  target="_blank"
+                  class="image fit column"
+                  id="caption"
+                >
+                  <span class="text"
+                    ><h1>Apartar modelos por catálogo</h1></span
+                  >
+                  <img
+                    width="420px"
+                    height="286px"
+                    src="images/pedidosenlinea.jpg"
+                /></a>
+                <header>
+                  <h3>Pedidos en Línea</h3>
+                </header>
+              </article>
+              <article class="item">
+                <a
+                  href="http://mitienda.mundoterra.com/?clave=421320"
+                  target="_blank"
+                  class="image fit column"
+                  id="caption"
+                >
+                  <span class="text"
+                    ><h1>Apartar modelos por catálogo</h1></span
+                  >
+                  <img width="420px" height="286px" src="images/mitienda.jpg"
+                /></a>
+                <header>
+                  <h3>Mi tienda</h3>
+                </header>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tools Me -->
+      <section id="tools" class="three">
+        <div class="container">
+          <header>
+            <h2>Herramientas</h2>
+          </header>
+
+          <div class="row">
+            <div class="col-2 col-6-mobile">
+              <article>
+                <img width="128px" src="images/java.png" />
+              </article>
+              <article>
+                <img width="128px" src="images/spring.png" />
+              </article>
+            </div>
+            <div class="col-2 col-6-mobile">
+              <article>
+                <img width="128px" src="images/maven.png" />
+              </article>
+              <article>
+                <img width="128px" src="images/vuejs.png" />
+              </article>
+            </div>
+            <div class="col-2 col-6-mobile">
+              <article>
+                <img width="128px" src="images/nodejs.png" />
+              </article>
+              <article>
+                <img width="128px" src="images/javascript.png" />
+              </article>
+            </div>
+            <div class="col-2 col-6-mobile">
+              <article>
+                <img width="128px" src="images/jquery.png" />
+              </article>
+              <article>
+                <img width="128px" src="images/oracle.png" />
+              </article>
+            </div>
+            <div class="col-2 col-6-mobile">
+              <article>
+                <img width="128px" src="images/bootstrap.png" />
+              </article>
+              <article>
+                <img width="128px" src="images/jasper.png" />
+              </article>
+            </div>
+            <div class="col-2 col-6-mobile">
+              <article>
+                <img width="128px" src="images/git.png" />
+              </article>
+              <article>
+                <img width="128px" src="images/docker.png" />
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="four">
+        <div class="container">
+          <header>
+            <h2>Contacto</h2>
+          </header>
+
+          <form method="post" action="#">
+            <div class="row">
+              <div class="col-6 col-12-mobile">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Nombre*"
+                  v-model="nombre"
+                />
+              </div>
+              <div class="col-6 col-12-mobile">
+                <input
+                  type="text"
+                  name="email"
+                  placeholder="Email*"
+                  v-model="email"
+                />
+              </div>
+              <div class="col-12">
+                <textarea
+                  name="message"
+                  placeholder="Mensaje*"
+                  v-model="mensaje"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <input
+                  type="submit"
+                  @click="enviarEmail($event)"
+                  value="Enviar Mensaje"
+				  :disabled="loading"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer">
+      <!-- Copyright -->
+      <ul class="copyright">
+        <li>Powered by JEBG</li>
+      </ul>
+    </div>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <!-- MIOS -->
+	<script src="assets/js/sweetalert2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="assets/js/vuejs.js"></script>
+  </body>
+</html>
