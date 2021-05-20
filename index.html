@@ -7,6 +7,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, user-scalable=no"
     />
+    <link rel="icon" type="image/ico" href="images/favicon.ico" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
       .column#caption {
@@ -136,7 +137,7 @@
             <div class="col-6 col-12-mobile">
               <article class="item">
                 <a
-                  href="#"
+                href="https://jebg.duckdns.org/WeatherApp/"
                   target="_blank"
                   class="image fit column"
                   id="caption"
@@ -144,7 +145,10 @@
                   <span class="text"
                     ><h1>App para ver la temperatura por ciudad</h1></span
                   >
-                  <img width="420px" height="286px" src="images/pic02.jpg"
+                  <img
+                    width="420px"
+                    height="286px"
+                    src="images/WeatherApp.JPG"
                 /></a>
                 <header>
                   <h3>Weather App</h3>
@@ -303,7 +307,7 @@
                   type="submit"
                   @click="enviarEmail($event)"
                   value="Enviar Mensaje"
-				  :disabled="loading"
+                  :disabled="loading"
                 />
               </div>
             </div>
@@ -328,9 +332,9 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
     <!-- MIOS -->
-	<script src="assets/js/sweetalert2.min.js"></script>
+    <script src="assets/js/sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="assets/js/vuejs.js"></script>
   </body>
 </html>
