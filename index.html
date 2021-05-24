@@ -1,340 +1,749 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <!-- Meta -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- Title -->
     <title>Portafolio de Jesús Eduardo</title>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+
+    <!-- CSS Plugins -->
+    <link rel="stylesheet" href="css/plugins/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/plugins/font-awesome.css" />
+    <link rel="stylesheet" href="css/plugins/magnific-popup.css" />
+    <link rel="stylesheet" href="css/plugins/simplebar.css" />
+    <link rel="stylesheet" href="css/plugins/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/plugins/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="css/plugins/jquery.animatedheadline.css" />
+
+    <!-- CSS Base -->
+    <link rel="stylesheet" class="back-color" href="css/style-dark.css" />
+    <link rel="stylesheet" href="css/style-demo.css" />
+
+    <!-- Settings Style -->
+    <link rel="stylesheet" class="posit-nav" href="css/settings/left-nav.css" />
+    <link
+      rel="stylesheet"
+      class="theme-color"
+      href="css/settings/green-color.css"
     />
-    <link rel="icon" type="image/ico" href="images/favicon.ico" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-      .column#caption {
-        position: relative;
-      }
-      .column#caption .text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 10;
-        opacity: 0;
-        transition: all 0.8s ease;
-      }
-      .column#caption .text h1 {
-        margin: 0;
-        color: #222629;
-      }
-      .column#caption:hover .text {
-        opacity: 1;
-      }
-      .column#caption:hover img {
-        opacity: 0.2;
-      }
-    </style>
+    <link rel="icon" type="image/ico" href="img/favicon.ico" />
   </head>
-  <body class="is-preload">
-    <!-- Header -->
-    <div id="header">
-      <div class="top">
-        <!-- Logo -->
-        <div id="logo">
-          <span class="image avatar48"
-            ><img
-              src="https://avatars.githubusercontent.com/u/52174137?s=400&u=070f95c145422a1ff68a719374efab54bdc5d128&v=4"
-              alt=""
-          /></span>
-          <h1 id="title">Jesús Eduardo</h1>
-          <p>Desarrollador Java fullstack</p>
-        </div>
-
-        <!-- Nav -->
-        <nav id="nav">
-          <ul>
-            <li>
-              <a href="#top" id="top-link"
-                ><span class="icon solid fa-home">Inicio</span></a
-              >
-            </li>
-            <li>
-              <a href="#portfolio" id="portfolio-link"
-                ><span class="icon solid fa-th">Mis proyectos</span></a
-              >
-            </li>
-            <li>
-              <a href="#tools" id="tools-link"
-                ><span class="icon solid fa-cog">Herramientas</span></a
-              >
-            </li>
-            <li>
-              <a href="#contact" id="contact-link"
-                ><span class="icon solid fa-envelope">Contacto</span></a
-              >
-            </li>
-          </ul>
-        </nav>
+  <body>
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loading-area">
+        <div class="circle"></div>
       </div>
-
-      <div class="bottom">
-        <!-- Social Icons -->
-        <ul class="icons">
-          <li>
-            <a
-              href="https://github.com/jesusedu"
-              target="_blank"
-              class="icon brands fa-github"
-              ><span class="label">Github</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://www.linkedin.com/in/jes%C3%BAs-eduardo-bautista-gudi%C3%B1o-713741131"
-              target="_blank"
-              class="icon brands fa-linkedin"
-              ><span class="label">linkedin</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="mailto:jesusedu90@hotmail.com"
-              target="_blank"
-              class="icon solid fa-envelope"
-              ><span class="label">Email</span></a
-            >
-          </li>
-        </ul>
-      </div>
+      <div class="left-side"></div>
+      <div class="right-side"></div>
     </div>
 
-    <!-- Main -->
-    <div id="main">
-      <!-- Intro -->
-      <section id="top" class="one dark cover">
-        <div class="container">
-          <header>
-            <h2 class="alt">
-              Hola soy Jesús Eduardo
-              <strong>Desarrollador Java fullstack</strong>
-            </h2>
-            <p>
-              Con 6 años de experiencia y mis especialidades son: JAVA | Spring
-              Framework | maven | vuejs | nodejs | javascript | jquery |
-              Bootstrap | PLSQL ORACLE | jasper server | Mongodb | GIT | Docker
-            </p>
-          </header>
-        </div>
-      </section>
+    <!-- Main Site -->
+    <div id="home">
+      <div id="about">
+        <div id="resume">
+          <div id="portfolio">
+            <div id="blog">
+              <div id="contact">
+                <div class="header-mobile">
+                  <a class="header-toggle"><i class="fas fa-bars"></i></a>
+                  <h2>JEBG</h2>
+                </div>
 
-      <!-- Portfolio -->
-      <section id="portfolio" class="two">
-        <div class="container">
-          <header>
-            <h2>Mis Proyectos</h2>
-          </header>
+                <!-- Left Block -->
+                <nav class="header-main" data-simplebar>
+                  <!-- Logo -->
+                  <div class="logo">
+                    <img
+                      width="45px"
+                      src="img/java.png"
+                    />
+                  </div>
 
-          <div class="row">
-            <div class="col-6 col-12-mobile">
-              <article class="item">
-                <a
-                href="https://jebg.duckdns.org/WeatherApp/"
-                  target="_blank"
-                  class="image fit column"
-                  id="caption"
+                  <ul>
+                    <li data-tooltip="home" data-position="top">
+                      <a href="#home" class="icon-h fas fa-house-damage"></a>
+                    </li>
+                    <li data-tooltip="about" data-position="top">
+                      <a href="#about" class="icon-a fas fa-user-tie"></a>
+                    </li>
+                    <li data-tooltip="resume" data-position="top">
+                      <a href="#resume" class="icon-r fas fa-address-book"></a>
+                    </li>
+                    <li data-tooltip="portfolio" data-position="top">
+                      <a href="#portfolio" class="icon-p fas fa-briefcase"></a>
+                    </li>
+                    <li data-tooltip="contact" data-position="bottom">
+                      <a href="#contact" class="icon-c fas fa-envelope"></a>
+                    </li>
+                  </ul>
+                </nav>
+
+                <!-- Home Section -->
+                <div
+                  class="pt-home"
+                  style="background-image: url('img/home-bg.jpg')"
                 >
-                  <span class="text"
-                    ><h1>App para ver la temperatura por ciudad</h1></span
-                  >
-                  <img
-                    width="420px"
-                    height="286px"
-                    src="images/WeatherApp.JPG"
-                /></a>
-                <header>
-                  <h3>Weather App</h3>
-                </header>
-              </article>
-              <article class="item">
-                <a
-                  href="#"
-                  target="_blank"
-                  class="image fit column"
-                  id="caption"
-                >
-                  <span class="text"><h1>bot telegram</h1></span>
-                  <img width="420px" height="286px" src="images/pic03.jpg"
-                /></a>
-                <header>
-                  <h3>Weather bot</h3>
-                </header>
-              </article>
-            </div>
-            <div class="col-6 col-12-mobile">
-              <article class="item">
-                <a
-                  href="http://pedidos.mundoterra.com/"
-                  target="_blank"
-                  class="image fit column"
-                  id="caption"
-                >
-                  <span class="text"
-                    ><h1>Apartar modelos por catálogo</h1></span
-                  >
-                  <img
-                    width="420px"
-                    height="286px"
-                    src="images/pedidosenlinea.jpg"
-                /></a>
-                <header>
-                  <h3>Pedidos en Línea</h3>
-                </header>
-              </article>
-              <article class="item">
-                <a
-                  href="http://mitienda.mundoterra.com/?clave=421320"
-                  target="_blank"
-                  class="image fit column"
-                  id="caption"
-                >
-                  <span class="text"
-                    ><h1>Apartar modelos por catálogo</h1></span
-                  >
-                  <img width="420px" height="286px" src="images/mitienda.jpg"
-                /></a>
-                <header>
-                  <h3>Mi tienda</h3>
-                </header>
-              </article>
+                  <section>
+                    <!-- Banner -->
+                    <div class="banner">
+                      <h1>Jesús Eduardo Bautista</h1>
+                      <p class="cd-headline rotate-1">
+                        <span>I am a</span>
+                        <span class="cd-words-wrapper">
+                          <b class="is-visible">Java Developer</b>
+                          <b>JavaScript Developer</b>
+                          <b>Fullstack Developer</b>
+                          <b>Freelancer</b>
+                        </span>
+                      </p>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="social">
+                      <ul>
+                        <li>
+                          <a href="https://github.com/jesusedu" target="_blank"
+                            ><i class="fab fa-github"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://www.linkedin.com/in/jes%C3%BAs-eduardo-bautista-gudi%C3%B1o-713741131"
+                            target="_blank"
+                            ><i class="fab fa-linkedin"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a
+                            href="mailto:jesusedu90@hotmail.com"
+                            target="_blank"
+                            ><i class="fa fa-envelope"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- About Section -->
+                <div class="page pt-about" data-simplebar>
+                  <section class="container">
+                    <!-- Section Title -->
+                    <div class="header-page mt-70 mob-mt">
+                      <h2>About Me</h2>
+                      <span></span>
+                    </div>
+
+                    <!-- Personal Info Start -->
+                    <div class="row mt-100">
+                      <!-- Information Block -->
+                      <div class="col-lg-12 col-sm-12">
+                        <div class="info box">
+                          <div class="row">
+                            <div class="col-lg-3 col-sm-4">
+                              <div class="photo">
+                                <img
+                                  alt="JEBG"
+                                  src="https://avatars.githubusercontent.com/u/52174137?s=400&u=070f95c145422a1ff68a719374efab54bdc5d128&v=4"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-lg-9 col-sm-8">
+                              <h4>Jesús Eduardo Bautista</h4>
+                              <div class="loc">
+                                <i class="fas fa-map-marked-alt"></i>
+                                Guadalajara, MEX
+                              </div>
+                              <p>
+                                Hi, I'm Jesús Eduardo Bautista, a very
+                                passionate and professional self-taught
+                                fullstack Developer with over six years work
+                                experience.
+                              </p>
+                              <p>
+                                My passion has always been software development.
+                              </p>
+                              <p>
+                                If you are interested in working with me or
+                                hiring me, you can contact me through my email
+                                or my social networks.
+                              </p>
+                            </div>
+
+                            <!-- Icon Info -->
+                            <div class="col-lg-3 col-sm-4">
+                              <div class="info-icon">
+                                <i class="fas fa-award"></i>
+                                <div class="desc-icon">
+                                  <h6>6 Years Job</h6>
+                                  <p>Experience</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Icon Info -->
+                            <div class="col-lg-3 col-sm-4">
+                              <div class="info-icon">
+                                <i class="fas fa-certificate"></i>
+                                <div class="desc-icon">
+                                  <h6>Many Projects</h6>
+                                  <p>Completed</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Icon Info -->
+                            <div class="col-lg-3 col-sm-4">
+                              <div class="info-icon">
+                                <i class="fas fa-book"></i>
+                                <div class="desc-icon">
+                                  <h6>self-taught</h6>
+                                  <p>Learn</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Icon Info -->
+                            <div class="col-lg-3 col-sm-4">
+                              <div class="info-icon">
+                                <i class="fas fa-user-astronaut"></i>
+                                <div class="desc-icon">
+                                  <h6>Freelance</h6>
+                                  <p>Available</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Interests Row Start -->
+                    <div class="row mt-100">
+                      <!-- Header Block -->
+                      <div class="col-md-12">
+                        <div class="header-box mb-50">
+                          <h3>My Interests</h3>
+                        </div>
+                      </div>
+
+                      <div class="col-lg-12 col-sm-12">
+                        <div class="box">
+                          <div class="row">
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="fas fa-film"></i>
+                                <div class="desc-inter">
+                                  <h6>Movies</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="fas fa-route"></i>
+                                <div class="desc-inter">
+                                  <h6>Travelling</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="far fa-futbol"></i>
+                                <div class="desc-inter">
+                                  <h6>Sports</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="fas fa-music"></i>
+                                <div class="desc-inter">
+                                  <h6>Music</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="fas fa-space-shuttle"></i>
+                                <div class="desc-inter">
+                                  <h6>Space</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="fas fa-car"></i>
+                                <div class="desc-inter">
+                                  <h6>Cars</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="fas fa-gamepad"></i>
+                                <div class="desc-inter">
+                                  <h6>Video games</h6>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Interests Item -->
+                            <div class="col-lg-3 col-sm-6">
+                              <div class="inter-icon">
+                                <i class="fas fa-tree"></i>
+                                <div class="desc-inter">
+                                  <h6>Nature</h6>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Service Row Start -->
+                    <div class="row mt-100">
+                      <!-- Header Block -->
+                      <div class="col-md-12">
+                        <div class="header-box mb-50">
+                          <h3>Services</h3>
+                        </div>
+                      </div>
+
+                      <!-- Service Item -->
+                      <div class="col-lg-6 col-sm-6">
+                        <div class="service box mb-40">
+                          <i class="fas fa-desktop"></i>
+                          <h4>Front Design</h4>
+                          <p>
+                            Nice designs made with frameworks like quasar.dev
+                            and jquery.
+                          </p>
+                        </div>
+                      </div>
+
+                      <!-- Service Item -->
+                      <div class="col-lg-6 col-sm-6">
+                        <div class="service box mb-40">
+                          <i class="fas fa-cogs"></i>
+                          <h4>Back Development</h4>
+                          <p>Robust WS made with spring and nodejs.</p>
+                        </div>
+                      </div>
+
+                      <!-- Service Item -->
+                      <div class="col-lg-6 col-sm-6">
+                        <div class="service box mb-40">
+                          <i class="fas fa-mobile-alt"></i>
+                          <h4>Devices Apps</h4>
+                          <p>Made with vuejs and cordova.</p>
+                        </div>
+                      </div>
+
+                      <!-- Service Item -->
+                      <div class="col-lg-6 col-sm-6">
+                        <div class="service box mb-40">
+                          <i class="fas fa-medkit"></i>
+                          <h4>quick Support</h4>
+                          <p>Get support for your applioations.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Resume Section -->
+                <div class="page pt-resume" data-simplebar>
+                  <section class="container">
+                    <!-- Section Title -->
+                    <div class="header-page mt-70 mob-mt">
+                      <h2>Resume</h2>
+                      <span></span>
+                    </div>
+
+                    <!-- Experience & Education Row Start -->
+                    <div class="row mt-100">
+                      <!-- Experience Column Start -->
+                      <div class="col-lg-6 col-sm-12">
+                        <!-- Header Block -->
+                        <div class="header-box mb-50">
+                          <h3>Experience</h3>
+                        </div>
+
+                        <div class="experience box">
+                          <!-- Experience Item -->
+                          <div class="item">
+                            <div class="main">
+                              <h4>Java full Stack</h4>
+                              <p>
+                                <i class="far fa-calendar-alt"></i>2015 -
+                                present | Mundo Terra
+                              </p>
+                            </div>
+                            <p>
+                              Develop and implement web applications for
+                              internal company use.
+                            </p>
+                          </div>
+
+                          <!-- Experience Item -->
+                          <div class="item">
+                            <div class="main">
+                              <h4>BD support boss</h4>
+                              <p>
+                                <i class="far fa-calendar-alt"></i>2014 - 2015 |
+                                Mundo Terra
+                              </p>
+                            </div>
+                            <p>
+                              ● Coordinate the support area to achieve time
+                              goals in tickets sent by users. ● Promote new
+                              functions to improve the service. ● Create and
+                              schedule jobs to run at certain times in order to
+                              automate processes. ● Generate reports for
+                              managers.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Education Column Start -->
+                      <div class="col-lg-6 col-sm-12">
+                        <!-- Header Block -->
+                        <div class="header-box mb-50 mob-box-mt">
+                          <h3>Education</h3>
+                        </div>
+
+                        <div class="experience box">
+                          <!-- Education Item -->
+                          <div class="item">
+                            <div class="main">
+                              <h4>Oracle MOOC: PL/SQL</h4>
+                              <p>
+                                <i class="far fa-calendar-alt"></i> 2018 |
+                                Oracle
+                              </p>
+                            </div>
+                            <p>Online Course on PL/SQL Fundamentals..</p>
+                          </div>
+
+                          <!-- Education Item -->
+                          <div class="item">
+                            <div class="main">
+                              <h4>Gradution</h4>
+                              <p>
+                                <i class="far fa-calendar-alt"></i>2004 - 2007 |
+                                Computer Engineer
+                              </p>
+                            </div>
+                            <p>
+                              I graduated from the University of Guadalajara.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Skills Row Start -->
+                    <div class="row mt-100">
+                      <!-- Header Block -->
+                      <div class="col-md-12">
+                        <div class="header-box mb-50">
+                          <h3>Skills</h3>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="box skills">
+                      <div class="row">
+                        <div class="col-lg-6 col-sm-6">
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Java</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">6 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Spring</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">6 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Maven</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">6 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">JavaScript</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">4 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Docker</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">1 years</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-sm-6">
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Vuejs</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">2 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Jquery</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">4 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Nodejs</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">2 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Oracle</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">6 years</div>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- Skill Item -->
+                          <div class="skill-item">
+                            <h4 class="progress-title">Git</h4>
+                            <div class="progress">
+                              <div class="progress-bar" style="width: 100%">
+                                <div class="progress-value">6 years</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Portfolio Section -->
+                <div class="page pt-portfolio" data-simplebar>
+                  <section class="container">
+                    <!-- Section Title -->
+                    <div class="header-page mt-70 mob-mt">
+                      <h2>Portfolio</h2>
+                      <span></span>
+                    </div>
+
+                    <!-- Portfolio Filter Row Start -->
+                    <div class="row mt-100">
+                      <div class="col-lg-12 col-sm-12 portfolio-filter">
+                        <ul>
+                          <li class="active" data-filter="*">All</li>
+                          <li data-filter=".Web">Web</li>
+                          <li data-filter=".Bot">Bot</li>
+                        </ul>
+                      </div>
+                    </div>
+
+                    <!-- Portfolio Item Row Start -->
+                    <div class="row portfolio-items mt-100 mb-100">
+                      <!-- Portfolio Item -->
+                      <div class="item col-sm-6 Web">
+                        <figure>
+                          <img src="img/portfolio/WeatherApp.jpg" />
+                          <figcaption>
+                            <h3>Weather App</h3>
+                            <p>App to see the temperature by city</p>
+                            <i class="fa fa-window-maximize"></i>
+                            <a
+                              target="_blank"
+                              href="https://jebg.duckdns.org/WeatherApp/"
+                            ></a>
+                          </figcaption>
+                        </figure>
+                      </div>
+
+                      <!-- Portfolio Item -->
+                      <div class="item col-sm-6 Web">
+                        <figure>
+                          <img src="img/portfolio/pedidosenlinea.jpg" />
+                          <figcaption>
+                            <h3>Pedidos en Línea</h3>
+                            <p>Apartar modelos por catálogo</p>
+                            <i class="fa fa-window-maximize"></i>
+                            <a
+                              target="_blank"
+                              href="http://pedidos.mundoterra.com/"
+                            ></a>
+                          </figcaption>
+                        </figure>
+                      </div>
+
+                      <!-- Portfolio Item -->
+                      <div class="item col-sm-6 Bot">
+                        <figure>
+                          <img src="img/portfolio/weatherbot.jpg" />
+                          <figcaption>
+                            <h3>Weather bot</h3>
+                            <p>Bot Telegram</p>
+                            <i class="fa fa-window-maximize"></i>
+                            <a
+                              target="_blank"
+                              :href="isMobile ? 'https://telegram.me/JEBG_WeatherAppBot' : 'https://web.telegram.org/#/im?p=@JEBG_WeatherAppBot'"
+                            ></a>
+                          </figcaption>
+                        </figure>
+                      </div>
+
+                      <!-- Portfolio Item -->
+                      <div class="item col-sm-6 Web">
+                        <figure>
+                          <img src="img/portfolio/mitienda.jpg" />
+                          <figcaption>
+                            <h3>Mi tienda</h3>
+                            <p>Apartar modelos por catálogo</p>
+                            <i class="fa fa-window-maximize"></i>
+                            <a
+                              target="_blank"
+                              href="http://mitienda.mundoterra.com/?clave=421320"
+                            ></a>
+                          </figcaption>
+                        </figure>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+                <!-- Contact Section -->
+                <div class="page pt-contact" data-simplebar>
+                  <section class="container">
+                    <!-- Section Title -->
+                    <div class="header-page mt-70 mob-mt">
+                      <h2>Contact</h2>
+                      <span></span>
+                    </div>
+
+                    <!-- Form Start -->
+                    <div class="row mt-100">
+                      <div class="col-lg-12 col-sm-12">
+                        <div class="contact-form">
+                          <div class="row">
+                            <div class="col-lg-6 col-sm-12">
+                              <input
+                                type="text"
+                                name="name"
+                                id="name"
+                                class="form-control"
+                                placeholder="Name *"
+                                v-model="nombre"
+                              />
+                            </div>
+                            <div class="col-lg-6 col-sm-12">
+                              <input
+                                type="email"
+                                name="email"
+                                id="email"
+                                class="form-control"
+                                placeholder="Email *"
+                                v-model="email"
+                              />
+                            </div>
+                            <div class="col-lg-12 col-sm-12">
+                              <textarea
+                                class="form-control"
+                                name="note"
+                                id="note"
+                                placeholder="Your Message *"
+                                v-model="mensaje"
+                              ></textarea>
+                            </div>
+                            <div class="col-lg-12 col-sm-12 text-center">
+                              <button
+                                @click="enviarEmail($event)"
+                                class="btn-st"
+                                :disabled="loading"
+                              >
+                                Send Message
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </section>
+                </div>
+              </div>
             </div>
           </div>
         </div>
-      </section>
-
-      <!-- tools Me -->
-      <section id="tools" class="three">
-        <div class="container">
-          <header>
-            <h2>Herramientas</h2>
-          </header>
-
-          <div class="row">
-            <div class="col-2 col-6-mobile">
-              <article>
-                <img width="128px" src="images/java.png" />
-              </article>
-              <article>
-                <img width="128px" src="images/spring.png" />
-              </article>
-            </div>
-            <div class="col-2 col-6-mobile">
-              <article>
-                <img width="128px" src="images/maven.png" />
-              </article>
-              <article>
-                <img width="128px" src="images/vuejs.png" />
-              </article>
-            </div>
-            <div class="col-2 col-6-mobile">
-              <article>
-                <img width="128px" src="images/nodejs.png" />
-              </article>
-              <article>
-                <img width="128px" src="images/javascript.png" />
-              </article>
-            </div>
-            <div class="col-2 col-6-mobile">
-              <article>
-                <img width="128px" src="images/jquery.png" />
-              </article>
-              <article>
-                <img width="128px" src="images/oracle.png" />
-              </article>
-            </div>
-            <div class="col-2 col-6-mobile">
-              <article>
-                <img width="128px" src="images/bootstrap.png" />
-              </article>
-              <article>
-                <img width="128px" src="images/jasper.png" />
-              </article>
-            </div>
-            <div class="col-2 col-6-mobile">
-              <article>
-                <img width="128px" src="images/git.png" />
-              </article>
-              <article>
-                <img width="128px" src="images/docker.png" />
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Contact -->
-      <section id="contact" class="four">
-        <div class="container">
-          <header>
-            <h2>Contacto</h2>
-          </header>
-
-          <form method="post" action="#">
-            <div class="row">
-              <div class="col-6 col-12-mobile">
-                <input
-                  type="text"
-                  name="name"
-                  placeholder="Nombre*"
-                  v-model="nombre"
-                />
-              </div>
-              <div class="col-6 col-12-mobile">
-                <input
-                  type="text"
-                  name="email"
-                  placeholder="Email*"
-                  v-model="email"
-                />
-              </div>
-              <div class="col-12">
-                <textarea
-                  name="message"
-                  placeholder="Mensaje*"
-                  v-model="mensaje"
-                ></textarea>
-              </div>
-              <div class="col-12">
-                <input
-                  type="submit"
-                  @click="enviarEmail($event)"
-                  value="Enviar Mensaje"
-                  :disabled="loading"
-                />
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <div id="footer">
-      <!-- Copyright -->
-      <ul class="copyright">
-        <li>Powered by JEBG</li>
-      </ul>
-    </div>
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <!-- All Script -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/simplebar.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.animatedheadline.min.js"></script>
+    <script src="js/jquery.easypiechart.js"></script>
+    <script src="js/jquery.validation.js"></script>
+    <script src="js/tilt.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main-demo.js"></script>
+
     <!-- MIOS -->
-    <script src="assets/js/sweetalert2.min.js"></script>
+    <script src="js/sweetalert2.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="assets/js/vuejs.js"></script>
+    <script src="js/vuejs.js"></script>
   </body>
 </html>
