@@ -6,7 +6,7 @@ new Vue({
         "Content-Type": "application/json;charset=UTF-8",
       },
     },
-    urlApi: "https://jebg.duckdns.org/WS-Api/",
+    urlApi: "https://jesusedu.dev/WS-Api/",
     nombre: "",
     email: "",
     mensaje: "",
